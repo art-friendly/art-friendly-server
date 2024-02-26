@@ -1,14 +1,10 @@
 package com.example.artfriendlyserver.auth.controller;
 
-import com.example.artfriendlyserver.auth.model.type.Genre;
 import com.example.artfriendlyserver.auth.service.AuthService;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.Mapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
