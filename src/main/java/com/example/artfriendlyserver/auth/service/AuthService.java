@@ -2,8 +2,6 @@ package com.example.artfriendlyserver.auth.service;
 
 
 import com.example.artfriendlyserver.application.KakaoApi;
-import com.example.artfriendlyserver.auth.model.User;
-import com.example.artfriendlyserver.auth.model.UserRepository;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -16,7 +14,8 @@ public class AuthService {
         return kakaoApi.login(code);
     }
     public String validateUser (String token) throws JsonProcessingException {
-        return kakaoApi.login(code);
+
+        return kakaoApi.getUser(token).toString();
     }
 
     public String kakoLogout (String token) throws JsonProcessingException {
